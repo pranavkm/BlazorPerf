@@ -2,7 +2,11 @@
 @implements IDisposable
 @using System.Threading
 
-<h1>Ticker</h1>
+@{
+    var link = "ticker_displayed";
+}
+
+<h1 id="@link">Ticker</h1>
 <p class="tick-value">@tick</p>
 
 @code {

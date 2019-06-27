@@ -1,8 +1,10 @@
 @page "/counter"
+@{
+    var link = "counter_displayed";
+}
+<h1 id="@link">Counter</h1>
 
-<h1>Counter</h1>
-
-<p>Current count: @currentCount</p>
+<p>Current count: <span id="currentCount" count="@currentCount">@currentCount</span></p>
 
 <button class="btn btn-primary" id="counter" @onclick="@IncrementCount">Click me</button>
 

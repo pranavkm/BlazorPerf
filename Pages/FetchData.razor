@@ -2,7 +2,10 @@
 @using BlazorServerSIde.Data
 @inject WeatherForecastService ForecastService
 
-<h1>Weather forecast</h1>
+@{
+    var link = "fetchdata_displayed";
+}
+<h1 id="@link">Weather forecast</h1>
 
 <p>This component demonstrates fetching data from a service.</p>
 
