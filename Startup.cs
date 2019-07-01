@@ -26,7 +26,7 @@ namespace BlazorServerSIde
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddRazorPages();
-            services.AddServerSideBlazor(options => options.MaxRetainedDisconnectedCircuits = 1000);
+            services.AddServerSideBlazor(options => options.MaxRetainedDisconnectedCircuits = Int32.MaxValue);
             services.AddSingleton<WeatherForecastService>();
         }
 
